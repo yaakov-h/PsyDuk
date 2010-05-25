@@ -14,6 +14,7 @@ void PDOpenWindowsTerminal()
 	
 	// Courtesy of Vile
 	PDRunWindowsCommand_P("cmd /Q /D /T:7F /F:OFF /V:OFF /K \"@echo off && mode con:RATE=31 DELAY=0 && mode con:COLS=15 LINES=1 && title . && cls\"");
+	PDDelay(800);
 }
 
 void PDOpenWindowsTerminalAsAdministrator()
@@ -24,7 +25,7 @@ void PDOpenWindowsTerminalAsAdministrator()
 	PDDelay(1500);
 	PDDelayedKeypressWithModifier(KEY_ENTER, KEY_CTRL | KEY_SHIFT);
 	
-	PDDelay(750);
+	PDDelay(1200);
 	PDKeypress(KEY_LEFT);
 	PDKeypress(KEY_ENTER);
 	
@@ -32,6 +33,7 @@ void PDOpenWindowsTerminalAsAdministrator()
 	PDTypeString_P("start cmd /c ");
 	PDTypeString_P("cmd /Q /D /T:7F /F:OFF /V:OFF /K \"@echo off && mode con:RATE=31 DELAY=0 && mode con:COLS=15 LINES=1 && title . && cls\"");
 	PDTypeString_P(" && exit\n");
+	PDDelay(800);
 	
 }
 
