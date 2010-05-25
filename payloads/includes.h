@@ -3,6 +3,8 @@
 
 #include "psyduk/includes.h"
 
+
+
 /*
  * Facebook
  */
@@ -17,6 +19,12 @@
  * Networking Payloads
  */
 #include "networking/networkdrives.h"
+
+/*
+ * Miscellaneous Payloads
+ */
+#include "misc/rickroll.h"
+
 
 
 
