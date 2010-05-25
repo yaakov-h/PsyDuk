@@ -4,6 +4,7 @@
 #include "includes.h"
 
 void PDOpenWindowsTerminal(void);
+void PDOpenWindowsTerminalAsAdministrator(void);
 void PDOpenMacOSXTerminal(void);
 void PDOpenLinuxTerminal(void);
 
