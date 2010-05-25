@@ -22,7 +22,7 @@ void PDOpenWindowsTerminalAsAdministrator()
 	PDDelay(200);
 	PDTypeString_P("cmd.exe");
 	PDDelay(1500);
-	PDKeypressWithModifier(KEY_ENTER, KEY_CTRL | KEY_SHIFT);
+	PDDelayedKeypressWithModifier(KEY_ENTER, KEY_CTRL | KEY_SHIFT);
 	
 	PDDelay(750);
 	PDKeypress(KEY_LEFT);
