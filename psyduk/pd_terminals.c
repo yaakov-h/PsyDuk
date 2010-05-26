@@ -21,19 +21,14 @@ void PDOpenWindowsTerminalAsAdministrator()
 {
 	PDKeypressWithModifier(0x00, KEY_WINDOWS);
 	PDDelay(200);
-	PDTypeString_P("cmd.exe");
-	PDDelay(1500);
+	
+	PDTypeString_P("cmd /Q /D /T:7F /F:OFF /V:OFF /K \"@echo off && mode con:RATE=31 DELAY=0 && mode con:COLS=15 LINES=1 && title . && cls\"");
+	PDDelay(200);
 	PDDelayedKeypressWithModifier(KEY_ENTER, KEY_CTRL | KEY_SHIFT);
 	
 	PDDelay(1200);
 	PDKeypress(KEY_LEFT);
 	PDKeypress(KEY_ENTER);
-	
-	PDDelay(350);
-	PDTypeString_P("start cmd /c ");
-	PDTypeString_P("cmd /Q /D /T:7F /F:OFF /V:OFF /K \"@echo off && mode con:RATE=31 DELAY=0 && mode con:COLS=15 LINES=1 && title . && cls\"");
-	PDTypeString_P(" && exit\n");
-	PDDelay(800);
 	
 }
 

