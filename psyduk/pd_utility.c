@@ -89,7 +89,7 @@ void PDDelayedKeypressWithModifier(uint8_t key, uint8_t modifier)
 	keyboard_modifier_keys = modifier;
 	usb_keyboard_send();
 	
-	PDDelay(150);
+	PDDelay(500);
 	
 	keyboard_keys[0] = key;
 	usb_keyboard_send();

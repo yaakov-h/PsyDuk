@@ -30,7 +30,7 @@ void PDRunLinuxCommand(const char* command)
 
 void PDOpenLinuxRunBox()
 {
-	PDKeypressWithModifier(KEY_F2, KEY_ALT);
+	PDDelayedKeypressWithModifier(KEY_F2, KEY_ALT);
 	PDDelay(500);
 }
 

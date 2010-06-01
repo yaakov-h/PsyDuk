@@ -26,7 +26,7 @@ void PDOpenWindowsTerminalAsAdministrator()
 	PDDelay(200);
 	PDDelayedKeypressWithModifier(KEY_ENTER, KEY_CTRL | KEY_SHIFT);
 	
-	PDDelay(1200);
+	PDDelay(1800);
 	PDKeypress(KEY_LEFT);
 	PDKeypress(KEY_ENTER);
 	
