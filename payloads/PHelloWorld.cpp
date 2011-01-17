@@ -1,22 +1,22 @@
-#include "payloads.h"
+#include "PHelloWorld.h"
 
-class PHelloWorld : public CBasePayload {
-public:
-	PHelloWorld();
+PHelloWorld::PHelloWorld() {
 	
-	void LEDsChanged(uint8_t LEDs) {
-		
-	}
+}
+
+void PHelloWorld::LEDsChanged(uint8_t LEDs) {
 	
-	void Initialise() {
-		Keyboard.TypeString(PSTR("Hello, World!"));
-	};
-	
-	bool MainLoop() {
-		return true; // Continue
-	}
-	
-	void Cleanup() {
-		
-	}
-};
+}
+
+void PHelloWorld::Initialise() {
+	Keyboard.TypeString(PSTR("Hello, World!\n"));
+}
+
+bool PHelloWorld::MainLoop() {
+	Keyboard.TypeString(PSTR("LOL\n"));
+	return true; // Continue
+}
+
+void PHelloWorld::Cleanup() {
+
+}

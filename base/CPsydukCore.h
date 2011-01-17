@@ -1,4 +1,5 @@
 #pragma once
+#include "shareddefs.h"
 #include "IKeyboard.h"
 #include "IPayload.h"
 
@@ -25,7 +26,11 @@ private:
 	bool m_bIsInitialised;
 };
 
+#if USE_DUCKY_FUNCTIONS
+
 void DuckyStart		(CPsydukCore * core);
 bool DuckyRunLoop	(CPsydukCore * core);
+
+#endif
 
 void Delay(uint16_t ms);

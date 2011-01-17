@@ -1,5 +1,7 @@
-#include <stdint.h>
-#include "../base/CBasePayload.h"
-#include "../base/base.h"
+#pragma once
 
-//class PAYLOAD_CLASS;
+/*
+ * Add your payloads here
+ */
+
+#include "PHelloWorld.h"

@@ -8,6 +8,7 @@
  * This function gets called once after the device has initialised.
  */
 
+#if USE_DUCKY_FUNCTIONS
 void DuckyStart		(CPsydukCore * core) {
 	CMacTerminal terminal;
 	terminal.Open();
@@ -22,3 +23,5 @@ void DuckyStart		(CPsydukCore * core) {
 bool DuckyRunLoop	(CPsydukCore * core) {
 	return true;
 }
+
+#endif

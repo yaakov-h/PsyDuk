@@ -24,6 +24,7 @@
 		9645B26112E2734700607F90 /* IPayload.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IPayload.h; sourceTree = "<group>"; };
 		9645B29E12E2780400607F90 /* PHelloWorld.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = PHelloWorld.cpp; sourceTree = "<group>"; };
 		9645B2A512E2784800607F90 /* payloads.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = payloads.h; sourceTree = "<group>"; };
+		969FD07112E42EAC0044737D /* PHelloWorld.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PHelloWorld.h; sourceTree = "<group>"; };
 		96AA889112E1CAEF00C18CE7 /* psyduk_main.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = psyduk_main.cpp; sourceTree = "<group>"; };
 		96AA889712E1CB4300C18CE7 /* CUSBKeyboard.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CUSBKeyboard.h; sourceTree = "<group>"; };
 		96AA889812E1CB4300C18CE7 /* CUSBKeyboard.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CUSBKeyboard.cpp; sourceTree = "<group>"; };
@@ -97,6 +98,7 @@
 			children = (
 				9645B29E12E2780400607F90 /* PHelloWorld.cpp */,
 				9645B2A512E2784800607F90 /* payloads.h */,
+				969FD07112E42EAC0044737D /* PHelloWorld.h */,
 			);
 			path = payloads;
 			sourceTree = "<group>";

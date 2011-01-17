@@ -2,8 +2,11 @@
 
 #include "keys.h" // Key Definitions
 
-// Comment this line out to use payload classes directly.
-//#define USE_DUCKY_FUNCTIONS
+/* 
+ * Set to 0 use payload classes directly or 1 to use the
+ * functions in psyduk_main.cpp
+ */
+#define USE_DUCKY_FUNCTIONS 0
 // Sets the initial payload class run
 #define PAYLOAD_CLASS PHelloWorld
 

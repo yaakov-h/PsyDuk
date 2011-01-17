@@ -4,6 +4,7 @@
 #include "shareddefs.h"
 #include <util/delay.h>
 #include "usb_keyboard.h"
+#include "../payloads/payloads.h"
 
 CPsydukCore::CPsydukCore() {
 	m_bIsInitialised = false;
@@ -19,11 +20,10 @@ void CPsydukCore::Run() {
 	if (!m_bIsInitialised)
 		Initialise();
 	
-#ifdef USE_DUCKY_FUNCTIONS
+#if USE_DUCKY_FUNCTIONS
 	DuckyStart(this);
 	while (DuckyRunLoop(this));
 #else
-	class PAYLOAD_CLASS;
 	PAYLOAD_CLASS payload;
 	payload.Run();
 #endif
