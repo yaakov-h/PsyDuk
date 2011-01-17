@@ -1,7 +1,7 @@
 #include "PHelloWorld.h"
 
 PHelloWorld::PHelloWorld() {
-	
+
 }
 
 void PHelloWorld::LEDsChanged(uint8_t LEDs) {
@@ -14,7 +14,7 @@ void PHelloWorld::Initialise() {
 
 bool PHelloWorld::MainLoop() {
 	Keyboard.TypeString(PSTR("LOL\n"));
-	return true; // Continue
+	return false; // Continue
 }
 
 void PHelloWorld::Cleanup() {

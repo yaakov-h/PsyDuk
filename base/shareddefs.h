@@ -2,14 +2,6 @@
 
 #include "keys.h" // Key Definitions
 
-/* 
- * Set to 0 use payload classes directly or 1 to use the
- * functions in psyduk_main.cpp
- */
-#define USE_DUCKY_FUNCTIONS 0
-// Sets the initial payload class run
-#define PAYLOAD_CLASS PHelloWorld
-
 /*
  * These define the device's name as seen by the computer.
  * This defaults to the Apple Aluminum Keyboard to stop Mac OS X
@@ -17,6 +9,7 @@
  */
 #define STR_MANUFACTURER L"Apple Inc."
 #define STR_PRODUCT      L"Aluminum Keyboard"
+
 
 /*
  * From the USB keyboard example code:
