@@ -14,7 +14,7 @@
 # Frederik Rouleau
 # Carlos Lamas
 #
-# Edited by Psychosis for the PsyDuk Framework
+# Edited by Netshroud for the PsyDuk Framework
 #
 #----------------------------------------------------------------------------
 # On command line:
@@ -47,11 +47,14 @@ TARGET = psyduk
 
 
 # List C source files here. (C dependencies are automatically generated.)
-SRC =	$(TARGET).c \
-	$(wildcard psyduk/*.c) \
-	$(wildcard payloads/*.c) \
-	$(wildcard payloads/*.c) \
-	$(wildcard payloads/*/*.c) \
+SRC = 		$(wildcard base/*.c) \
+
+# List C++ source files here. (C dependencies are automatically generated.)
+CPPSRC = 	$(TARGET)_main.cpp \
+		$(wildcard base/*.cpp) \
+		$(wildcard payloads/*.cpp) \
+		$(wildcard util/*.cpp) \
+		$(wildcard util/terminal/*.cpp) \
 
 
 # MCU name, you MUST set this to match the board you are using
@@ -79,10 +82,6 @@ FORMAT = ihex
 #     To put object files in current directory, use a dot (.), do NOT make
 #     this an empty or blank macro!
 OBJDIR = .
-
-
-# List C++ source files here. (C dependencies are automatically generated.)
-CPPSRC = 
 
 
 # List Assembler source files here.
@@ -337,17 +336,17 @@ DEBUG_HOST = localhost
 
 
 # Define programs and commands.
-SHELL = sh
-CC = avr-gcc
-OBJCOPY = avr-objcopy
-OBJDUMP = avr-objdump
-SIZE = avr-size
-AR = avr-ar rcs
-NM = avr-nm
-AVRDUDE = avrdude
-REMOVE = rm -f
-REMOVEDIR = rm -rf
-COPY = cp
+SHELL = /bin/sh
+CC = /usr/local/CrossPack-AVR/bin/avr-gcc
+OBJCOPY = /usr/local/CrossPack-AVR/bin/avr-objcopy
+OBJDUMP = /usr/local/CrossPack-AVR/bin/avr-objdump
+SIZE = /usr/local/CrossPack-AVR/bin/avr-size
+AR = /usr/local/CrossPack-AVR/bin/avr-ar rcs
+NM = /usr/local/CrossPack-AVR/bin/avr-nm
+AVRDUDE = /usr/local/CrossPack-AVR/bin/avrdude
+REMOVE = /bin/rm -f
+REMOVEDIR = /bin/rm -rf
+COPY = /bin/cp
 WINSHELL = cmd
 
 

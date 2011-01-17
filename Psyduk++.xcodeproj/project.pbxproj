@@ -1,0 +1,234 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 45;
+	objects = {
+
+/* Begin PBXAggregateTarget section */
+		96AA898D12E1D5FD00C18CE7 /* Make */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 96AA89A012E1D66900C18CE7 /* Build configuration list for PBXAggregateTarget "Make" */;
+			buildPhases = (
+				96AA898C12E1D5FD00C18CE7 /* ShellScript */,
+			);
+			dependencies = (
+			);
+			name = Make;
+			productName = Make;
+		};
+/* End PBXAggregateTarget section */
+
+/* Begin PBXFileReference section */
+		9645B26112E2734700607F90 /* IPayload.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IPayload.h; sourceTree = "<group>"; };
+		9645B29E12E2780400607F90 /* PHelloWorld.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = PHelloWorld.cpp; sourceTree = "<group>"; };
+		9645B2A512E2784800607F90 /* payloads.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = payloads.h; sourceTree = "<group>"; };
+		96AA889112E1CAEF00C18CE7 /* psyduk_main.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = psyduk_main.cpp; sourceTree = "<group>"; };
+		96AA889712E1CB4300C18CE7 /* CUSBKeyboard.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CUSBKeyboard.h; sourceTree = "<group>"; };
+		96AA889812E1CB4300C18CE7 /* CUSBKeyboard.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CUSBKeyboard.cpp; sourceTree = "<group>"; };
+		96AA889912E1CBC900C18CE7 /* keys.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = keys.h; sourceTree = "<group>"; };
+		96AA88A612E1CC5400C18CE7 /* shareddefs.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = shareddefs.h; sourceTree = "<group>"; };
+		96AA88AB12E1CDF600C18CE7 /* IKeyboard.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IKeyboard.h; sourceTree = "<group>"; };
+		96AA88E812E1D05C00C18CE7 /* usb_keyboard.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = usb_keyboard.h; sourceTree = "<group>"; };
+		96AA88E912E1D05C00C18CE7 /* usb_keyboard.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = usb_keyboard.c; sourceTree = "<group>"; };
+		96AA896112E1D49F00C18CE7 /* avr.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = avr.h; sourceTree = "<group>"; };
+		96AA896212E1D49F00C18CE7 /* avr.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = avr.cpp; sourceTree = "<group>"; };
+		96AA89A412E1D69D00C18CE7 /* CPsydukCore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CPsydukCore.h; sourceTree = "<group>"; };
+		96AA89A512E1D69D00C18CE7 /* CPsydukCore.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CPsydukCore.cpp; sourceTree = "<group>"; };
+		96C5052612E2BB2D00A41D6A /* main.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		96C5052912E2BB7100A41D6A /* base.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = base.h; sourceTree = "<group>"; };
+		96C5052A12E2BBFD00A41D6A /* psyduk.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = psyduk.h; sourceTree = "<group>"; };
+		96C5055612E2BF3C00A41D6A /* CBasePayload.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CBasePayload.h; sourceTree = "<group>"; };
+		96C5055712E2BF3C00A41D6A /* CBasePayload.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CBasePayload.cpp; sourceTree = "<group>"; };
+		96C5058A12E2C03B00A41D6A /* util.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = util.h; sourceTree = "<group>"; };
+		96C5058C12E2C06900A41D6A /* ITerminal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ITerminal.h; sourceTree = "<group>"; };
+		96C5058E12E2C07400A41D6A /* CWindowsTerminal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CWindowsTerminal.h; sourceTree = "<group>"; };
+		96C5058F12E2C07400A41D6A /* CWindowsTerminal.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CWindowsTerminal.cpp; sourceTree = "<group>"; };
+		96C5059012E2C07B00A41D6A /* CMacTerminal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CMacTerminal.h; sourceTree = "<group>"; };
+		96C5059112E2C07B00A41D6A /* CMacTerminal.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CMacTerminal.cpp; sourceTree = "<group>"; };
+		96C5059212E2C08500A41D6A /* CLinuxTerminal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CLinuxTerminal.h; sourceTree = "<group>"; };
+		96C5059312E2C08500A41D6A /* CLinuxTerminal.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CLinuxTerminal.cpp; sourceTree = "<group>"; };
+		96C5059412E2C0C600A41D6A /* terminal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = terminal.h; sourceTree = "<group>"; };
+		96C505A812E2C31000A41D6A /* CBaseTerminal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CBaseTerminal.h; sourceTree = "<group>"; };
+		96C505A912E2C31000A41D6A /* CBaseTerminal.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CBaseTerminal.cpp; sourceTree = "<group>"; };
+		96C5060612E2C58D00A41D6A /* commands.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = commands.h; sourceTree = "<group>"; };
+		96C5060712E2C58D00A41D6A /* commands.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = commands.cpp; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXGroup section */
+		08FB7794FE84155DC02AAC07 /* Psyduk++ */ = {
+			isa = PBXGroup;
+			children = (
+				96C5058412E2C01C00A41D6A /* util */,
+				96AA889012E1CAE100C18CE7 /* payloads */,
+				96AA888F12E1CADD00C18CE7 /* base */,
+				96AA889112E1CAEF00C18CE7 /* psyduk_main.cpp */,
+				96C5052A12E2BBFD00A41D6A /* psyduk.h */,
+			);
+			name = "Psyduk++";
+			sourceTree = "<group>";
+		};
+		96AA888F12E1CADD00C18CE7 /* base */ = {
+			isa = PBXGroup;
+			children = (
+				96AA889712E1CB4300C18CE7 /* CUSBKeyboard.h */,
+				96AA889812E1CB4300C18CE7 /* CUSBKeyboard.cpp */,
+				96AA889912E1CBC900C18CE7 /* keys.h */,
+				96AA88A612E1CC5400C18CE7 /* shareddefs.h */,
+				96AA88AB12E1CDF600C18CE7 /* IKeyboard.h */,
+				96AA88E812E1D05C00C18CE7 /* usb_keyboard.h */,
+				96AA88E912E1D05C00C18CE7 /* usb_keyboard.c */,
+				96AA896112E1D49F00C18CE7 /* avr.h */,
+				96AA896212E1D49F00C18CE7 /* avr.cpp */,
+				96AA89A412E1D69D00C18CE7 /* CPsydukCore.h */,
+				96AA89A512E1D69D00C18CE7 /* CPsydukCore.cpp */,
+				9645B26112E2734700607F90 /* IPayload.h */,
+				96C5052612E2BB2D00A41D6A /* main.cpp */,
+				96C5052912E2BB7100A41D6A /* base.h */,
+				96C5055612E2BF3C00A41D6A /* CBasePayload.h */,
+				96C5055712E2BF3C00A41D6A /* CBasePayload.cpp */,
+			);
+			path = base;
+			sourceTree = "<group>";
+		};
+		96AA889012E1CAE100C18CE7 /* payloads */ = {
+			isa = PBXGroup;
+			children = (
+				9645B29E12E2780400607F90 /* PHelloWorld.cpp */,
+				9645B2A512E2784800607F90 /* payloads.h */,
+			);
+			path = payloads;
+			sourceTree = "<group>";
+		};
+		96C5058412E2C01C00A41D6A /* util */ = {
+			isa = PBXGroup;
+			children = (
+				96C5058B12E2C05300A41D6A /* terminal */,
+				96C5058A12E2C03B00A41D6A /* util.h */,
+				96C5060612E2C58D00A41D6A /* commands.h */,
+				96C5060712E2C58D00A41D6A /* commands.cpp */,
+			);
+			path = util;
+			sourceTree = "<group>";
+		};
+		96C5058B12E2C05300A41D6A /* terminal */ = {
+			isa = PBXGroup;
+			children = (
+				96C5058C12E2C06900A41D6A /* ITerminal.h */,
+				96C5058E12E2C07400A41D6A /* CWindowsTerminal.h */,
+				96C5058F12E2C07400A41D6A /* CWindowsTerminal.cpp */,
+				96C5059012E2C07B00A41D6A /* CMacTerminal.h */,
+				96C5059112E2C07B00A41D6A /* CMacTerminal.cpp */,
+				96C5059212E2C08500A41D6A /* CLinuxTerminal.h */,
+				96C5059312E2C08500A41D6A /* CLinuxTerminal.cpp */,
+				96C5059412E2C0C600A41D6A /* terminal.h */,
+				96C505A812E2C31000A41D6A /* CBaseTerminal.h */,
+				96C505A912E2C31000A41D6A /* CBaseTerminal.cpp */,
+			);
+			path = terminal;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXProject section */
+		08FB7793FE84155DC02AAC07 /* Project object */ = {
+			isa = PBXProject;
+			buildConfigurationList = 1DEB919308733D9F0010E9CD /* Build configuration list for PBXProject "Psyduk++" */;
+			compatibilityVersion = "Xcode 3.1";
+			developmentRegion = English;
+			hasScannedForEncodings = 1;
+			knownRegions = (
+				English,
+				Japanese,
+				French,
+				German,
+			);
+			mainGroup = 08FB7794FE84155DC02AAC07 /* Psyduk++ */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				96AA898D12E1D5FD00C18CE7 /* Make */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		96AA898C12E1D5FD00C18CE7 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# shell script goes here\nmake";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		1DEB919408733D9F0010E9CD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PREBINDING = NO;
+				SDKROOT = macosx10.6;
+			};
+			name = Debug;
+		};
+		1DEB919508733D9F0010E9CD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				PREBINDING = NO;
+				SDKROOT = macosx10.6;
+			};
+			name = Release;
+		};
+		96AA898E12E1D5FE00C18CE7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = psyduk;
+			};
+			name = Debug;
+		};
+		96AA898F12E1D5FE00C18CE7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = psyduk;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1DEB919308733D9F0010E9CD /* Build configuration list for PBXProject "Psyduk++" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1DEB919408733D9F0010E9CD /* Debug */,
+				1DEB919508733D9F0010E9CD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		96AA89A012E1D66900C18CE7 /* Build configuration list for PBXAggregateTarget "Make" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				96AA898E12E1D5FE00C18CE7 /* Debug */,
+				96AA898F12E1D5FE00C18CE7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 08FB7793FE84155DC02AAC07 /* Project object */;
+}

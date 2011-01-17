@@ -1,0 +1,14 @@
+*.hex
+*.eep
+*.map
+*.elf
+*.sym
+*.o
+*.pbxindex
+*.pbxuser
+*.perspective*
+*.lst
+*.DS_Store
+build/
+.dep/
+*.lss
