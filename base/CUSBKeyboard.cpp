@@ -31,20 +31,17 @@ void CUSBKeyboard::PressKey(uint8_t key, uint8_t modifier, uint8_t repeatCount) 
 	PressKey(key, modifier, repeatCount, 0);
 }
 
-void CUSBKeyboard::PressKey(uint8_t key, uint8_t modifier, uint8_t repeatCount, uint8_t modifierDelay) {
+void CUSBKeyboard::PressKey(uint8_t key, uint8_t modifier, uint8_t repeatCount, uint16_t modifierDelay) {
 	for ( uint16_t i = 0; i < repeatCount; i++ ) {
 		keyboard_modifier_keys = modifier;
 		usb_keyboard_send();
 		
 		if ( modifierDelay > 0 )
-			Delay( modifierDelay / 2 );
-		
+			Delay( modifierDelay );
+			
 		keyboard_keys[0] = key;
 		usb_keyboard_send();
-		
-		if ( modifierDelay > 0 )
-			Delay( modifierDelay / 2 );
-		
+				
 		keyboard_modifier_keys = 0;
 		keyboard_keys[0] = 0;
 		usb_keyboard_send();	

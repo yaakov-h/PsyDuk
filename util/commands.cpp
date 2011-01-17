@@ -3,11 +3,26 @@
 
 #pragma mark Run Command
 
+void RunWindowsCommand( const char* command, bool asAdministrator) {
+	if (asAdministrator) {
+		Keyboard.PressKey(0x00, KEY_WINDOWS);
+		Delay(750);
+		Keyboard.TypeString(command);
+		Delay(1500);
+		Keyboard.PressKey(KEY_ENTER, KEY_CTRL | KEY_SHIFT, 0, 500);
+		Delay(1000);
+		Keyboard.PressKey(KEY_LEFT);
+		Keyboard.PressKey(KEY_ENTER);
+	} else {
+		Keyboard.PressKey( KEY_R, KEY_WINDOWS );
+		Delay(750);
+		Keyboard.TypeString( command );
+		Keyboard.PressKey( KEY_ENTER );
+	}
+}
+
 void RunWindowsCommand( const char* command ) {
-	Keyboard.PressKey( KEY_R, KEY_WINDOWS );
-	Delay(750);
-	Keyboard.TypeString( command );
-	Keyboard.PressKey( KEY_ENTER );
+	RunWindowsCommand(command, false);
 }
 
 void RunMacCommand( const char* command ) {
@@ -30,7 +45,7 @@ void RunLinuxCommand( const char* command ) {
 #pragma mark Launch File
 
 void LaunchWindowsFile( const char* file ) {
-	RunWindowsCommand(file);
+	RunWindowsCommand(file, false);
 }
 
 void LaunchMacFile( const char* file) {
@@ -50,7 +65,7 @@ void LaunchLinuxFile( const char* file ) {
 
 void LaunchWindowsFileOnVolume( const char* file, const char* volume ) {
 	CWindowsTerminal terminal;
-	terminal.OpenSneaky();
+	terminal.OpenSneaky(false);
 }
 
 void LaunchMacFileOnVolume( const char* file, const char* volume ) {

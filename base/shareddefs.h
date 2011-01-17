@@ -22,6 +22,18 @@
 #define VENDOR_ID        0x05ac
 #define PRODUCT_ID       0x0220
 
+/*
+ * Definitions
+ */
+#ifdef __GNUC__
+	#define DEPRECATED(function) function __attribute__ ((deprecated))
+#elif defined(_MSC_VER)
+	#define DEPRECATED(function) __declspec(deprecated) function
+#else
+	#warning DEPRECATED is undefined for this compiler
+	#define DEPRECATED(function) function
+#endif
+
 
 /*
  * From the USB keyboard example code:

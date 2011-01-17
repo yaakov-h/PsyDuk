@@ -9,7 +9,7 @@ public:
 	virtual void PressKey(uint8_t key) = 0;
 	virtual void PressKey(uint8_t key, uint8_t modifier) = 0;
 	virtual void PressKey(uint8_t key, uint8_t modifier, uint8_t repeatCount) = 0;
-	virtual void PressKey(uint8_t key, uint8_t modifier, uint8_t repeatCount, uint8_t modifierDelay) = 0;
+	virtual void PressKey(uint8_t key, uint8_t modifier, uint8_t repeatCount, uint16_t modifierDelay) = 0;
 	virtual void TypeString(const char* string) = 0;
 	virtual void TypeChar(char c) = 0;
 };

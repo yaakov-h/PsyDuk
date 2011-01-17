@@ -4,6 +4,7 @@
 class CWindowsTerminal : public CBaseTerminal {
 public:
 	void Open();
-	void OpenSneaky();
+	void Open(bool asAdministrator);
+	void OpenSneaky(bool asAdministrator);
 	void Close();
 };

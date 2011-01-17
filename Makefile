@@ -45,6 +45,9 @@
 # Target file name (without extension).
 TARGET = psyduk
 
+# Psyduk++ Definition
+USE_DUCKY_FUNCTIONS = 0
+PAYLOAD_CLASS = PHelloWorld
 
 # List C source files here. (C dependencies are automatically generated.)
 SRC = 		$(wildcard base/*.c) \
@@ -163,6 +166,8 @@ CFLAGS += -Wa,-adhlns=$(<:%.c=$(OBJDIR)/%.lst)
 CFLAGS += $(patsubst %,-I%,$(EXTRAINCDIRS))
 CFLAGS += $(CSTANDARD)
 
+CFLAGS += -DUSE_DUCKY_FUNCTIONS=$(USE_DUCKY_FUNCTIONS)
+CFLAGS += -DPAYLOAD_CLASS=$(PAYLOAD_CLASS)
 
 #---------------- Compiler Options C++ ----------------
 #  -g*:          generate debugging information
@@ -189,6 +194,9 @@ CPPFLAGS += -Wundef
 CPPFLAGS += -Wa,-adhlns=$(<:%.cpp=$(OBJDIR)/%.lst)
 CPPFLAGS += $(patsubst %,-I%,$(EXTRAINCDIRS))
 #CPPFLAGS += $(CSTANDARD)
+
+CPPFLAGS += -DUSE_DUCKY_FUNCTIONS=$(USE_DUCKY_FUNCTIONS)
+CPPFLAGS += -DPAYLOAD_CLASS=$(PAYLOAD_CLASS)
 
 
 #---------------- Assembler Options ----------------

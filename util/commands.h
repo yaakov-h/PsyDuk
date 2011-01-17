@@ -3,11 +3,12 @@
 
 #pragma mark Run Command
 
-#define RunWindowsCommand_P( a )	RunWindowsCommand( PSTR( a ) )
+#define RunWindowsCommand_P( a, b )	RunWindowsCommand( PSTR( a ), PSTR( b ) )
 #define RunMacCommand_P( a )		RunMacCommand( PSTR( a ) )
 #define RunLinuxCommand_P( a )		RunLinuxCommand( PSTR( a ) )
 
-void RunWindowsCommand( const char* command );
+void RunWindowsCommand( const char* command, bool asAdministrator);
+DEPRECATED(void RunWindowsCommand( const char* command ));
 void RunMacCommand( const char* command );
 void RunLinuxCommand( const char* command );
 

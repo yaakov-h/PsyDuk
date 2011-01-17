@@ -9,11 +9,14 @@ void PHelloWorld::LEDsChanged(uint8_t LEDs) {
 }
 
 void PHelloWorld::Initialise() {
-	Keyboard.TypeString(PSTR("Hello, World!\n"));
+	//Keyboard.TypeString(PSTR("Hello, World!\n"));
+	CWindowsTerminal terminal;
+	// Not working, unsure why
+	terminal.Open(true);
 }
 
 bool PHelloWorld::MainLoop() {
-	Keyboard.TypeString(PSTR("LOL\n"));
+	//Keyboard.TypeString(PSTR("LOL\n"));
 	return false; // Continue
 }
 

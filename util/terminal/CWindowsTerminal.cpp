@@ -2,11 +2,16 @@
 #include "../util.h"
 
 void CWindowsTerminal::Open() {
-	RunWindowsCommand_P( "cmd" );
+	Open(false);
 }
 
-void CWindowsTerminal::OpenSneaky() {
-	RunWindowsCommand_P( "cmd /Q /D /T:7F /F:OFF /V:OFF /K \"@echo off && mode con:RATE=31 DELAY=0 && mode con:COLS=15 LINES=1 && title . && cls" );
+void CWindowsTerminal::Open(bool asAdministrator) {
+	RunWindowsCommand( PSTR("cmd.exe"), asAdministrator);
+}
+
+void CWindowsTerminal::OpenSneaky(bool asAdministrator) {
+	RunWindowsCommand( PSTR("cmd.exe /Q /D /T:7F /F:OFF /V:OFF /K \"@echo off && mode con:RATE=31 DELAY=0 && mode con:COLS=15 LINES=1 && title . && cls"),
+					  asAdministrator);
 }
 
 void CWindowsTerminal::Close() {
