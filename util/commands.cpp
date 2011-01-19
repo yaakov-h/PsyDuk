@@ -3,13 +3,17 @@
 
 #pragma mark Run Command
 
+// Note: Run as administrator does not work on my test machine yet.
 void RunWindowsCommand( const char* command, bool asAdministrator) {
 	if (asAdministrator) {
 		Keyboard.PressKey(0x00, KEY_WINDOWS);
 		Delay(750);
 		Keyboard.TypeString(command);
 		Delay(1500);
+		
+		// I think this line is the one that isn't working, not sure why.
 		Keyboard.PressKey(KEY_ENTER, KEY_CTRL | KEY_SHIFT, 0, 500);
+		
 		Delay(1000);
 		Keyboard.PressKey(KEY_LEFT);
 		Keyboard.PressKey(KEY_ENTER);
